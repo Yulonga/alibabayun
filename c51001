@@ -1,0 +1,18 @@
+#include<reg51.h>
+//#define unsigned int uint
+//#define unsigned char uchar
+void delay()
+{
+	int i=5000;
+	while(i--);
+}
+void main()
+{
+	while(1)
+	{
+		P0=0x00;
+		delay();
+		P0=0xff;
+		delay();
+	}	
+}
